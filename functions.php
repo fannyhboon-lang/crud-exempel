@@ -44,5 +44,9 @@ function deleteMovie($id, $pdo)
     }
 }
 
+/*function addMovie*/
+
+/*function getMovieById($pdo, $movieId);
+
 
 ?>

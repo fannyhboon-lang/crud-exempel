@@ -3,6 +3,7 @@ require_once "config.php";
 require_once "functions.php";
 
 
+
   if(isset($_POST["film_skicka"])){
       $namn = $_POST["namn"];
       $beskrivning = $_POST["beskrivning"];
@@ -88,6 +89,9 @@ if(isset($_POST["delete"])) {
                 <td><?= htmlspecialchars($rad["beskrivning"]) ?></td>
                 <td><?= htmlspecialchars($rad["datum"]) ?></td>
                 <td><?= htmlspecialchars($rad["kategori"]) ?></td>
+                <!-- <td><?= htmlspecialchars($rad["kategori"]) ?></td>
+                <td><?= htmlspecialchars($rad["kategori"]) ?></td> -->
+				
               </tr>
             <?php endforeach; ?>
           </tbody>
@@ -126,6 +130,7 @@ if(isset($_POST["delete"])) {
         </div>
       </div>
     </div>
- </body>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
 </html>
